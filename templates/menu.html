@@ -1,0 +1,17 @@
+{% load my_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uptrader Task</title>
+</head>
+<body>
+<h1>Menu</h1>
+<ul>
+    {% autoescape off %}
+    {% draw_menu menu_name %}
+    {% endautoescape %}
+{#    <a href="{% url "menu" slug %}">hi</a>#}
+</ul>
+</body>
+</html>
